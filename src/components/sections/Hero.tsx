@@ -33,7 +33,7 @@ export function Hero() {
   const parallax = useMouseParallax(0.015);
 
   return (
-    <section className="relative min-h-screen overflow-hidden pt-24">
+    <section className="relative min-h-screen overflow-hidden pt-8">
       <div className="absolute inset-0 grid-pattern opacity-40" />
       <div className="glow-orb top-1/4 -left-32 h-96 w-96 bg-primary/20" />
       <div className="glow-orb bottom-1/4 -right-32 h-96 w-96 bg-accent/15" />
@@ -64,7 +64,7 @@ export function Hero() {
             </span>
           </motion.div>
 
-          <h1 className="text-4xl font-bold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl xl:text-7xl">
+          <h1 className="text-2xl font-bold leading-[1.1] tracking-tight md:text-3xl lg:text-3xl">
             <TextReveal
               text="Engineering the Future with"
               delay={2.5}
@@ -107,7 +107,7 @@ export function Hero() {
         </div>
 
         <motion.div
-          className="relative flex-1 w-full max-w-lg lg:max-w-none"
+          className="relative flex-1 w-full max-w-lg lg:max-w-none mt-12 "
           style={{ x: parallax.x, y: parallax.y }}
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
